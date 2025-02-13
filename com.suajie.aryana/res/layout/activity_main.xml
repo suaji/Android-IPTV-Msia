@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/video1Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tv1" />
+
+        <ImageView
+            android:id="@+id/video2Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tv2" />
+
+        <ImageView
+            android:id="@+id/video3Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tv6" />
+
+        <ImageView
+            android:id="@+id/video4Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/okey" />
+
+        <ImageView
+            android:id="@+id/video5Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sukan" />
+
+        <ImageView
+            android:id="@+id/video6Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/berita" />
+
+    </LinearLayout>
+
+</RelativeLayout>

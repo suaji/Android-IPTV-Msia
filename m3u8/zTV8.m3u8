@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36
+#EXTVLCOPT:http-referrer=https://watch.tonton.com.my
+#EXTINF:-1, tvg-logo="" group-title="",TV8
+https://tonton-live-switch-ssar.akamaized.net/stream-8tv/master_1080_27289.ts?bpkio_serviceid=6c0958d82a830a02e2fe99cb3eff9bcf&bpkio_sessionid=10f3f8c202-aa15a435-6035-436c-ba52-918e4b651371

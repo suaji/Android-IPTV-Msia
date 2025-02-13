@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AjieTV</string>
+    <string name="video_1">TV1</string>
+    <string name="video_2">TV2</string>
+    <string name="video_3">TV6</string>
+    <string name="video_4">OKEY</string>
+    <string name="video_5">SUKAN</string>
+    <string name="video_6">BERITA</string>
+</resources>

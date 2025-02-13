@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36
+#EXTVLCOPT:http-referrer=https://watch.tonton.com.my
+#EXTINF:-1, tvg-logo="" group-title="",Drama Sangat
+https://tonton-live-sg3.akamaized.net/live-hls/tonton10_720p/hdntl=exp=1739506717~acl=%2f*~data=hdntl~hmac=a4b50e2936a65acf230f9ef55764060fe173c5b91ed3cb3feb7476a5bccb4cfb/index.m3u8

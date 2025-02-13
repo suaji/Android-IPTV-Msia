@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.ArianaTV" parent="Theme.AppCompat.DayNight.NoActionBar" />
+</resources>
