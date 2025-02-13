@@ -5,4 +5,4 @@
 
 # Dari Planet Namek
 
-# <img src="https://raw.githubusercontent.com/suaji/testing/master/screenshots/myiptv.png" width="600px" align="center" alt="AjieTV"/>
+# <img src="https://raw.githubusercontent.com/suaji/Android-IPTV-Msia/refs/heads/main/Screenshot.png" width="600px" align="center" alt="AjieTV"/>
