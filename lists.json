@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Video Stream 1",
+    "videoUrl": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+    "audioUrl": null,
+    "iconUrl": "https://rtm-images.glueapi.io/320x0/live_channel/tv1_bckg.png"
+  },
+  {
+    "title": "Audio Track 1",
+    "videoUrl": null,
+    "audioUrl": "https://your-audio-server.com/track1.aac",
+    "iconUrl": "https://your-image-server.com/icon2.png"
+  },
+  {
+    "title": "Video Stream 2",
+    "videoUrl": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2",
+    "audioUrl": null,
+    "iconUrl": "https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TV2.jpg"
+  },
+  {
+    "title": "Audio Track 2",
+    "videoUrl": null,
+    "audioUrl": "https://your-audio-server.com/track2.aac",
+    "iconUrl": "https://your-image-server.com/icon4.png"
+  }
+]

@@ -1,61 +1,140 @@
 package com.suajie.ajietv;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.widget.MediaController;
-import android.widget.VideoView;
+import android.widget.Button;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.exoplayer2.ExoPlayer;
+import com.google.android.exoplayer2.MediaItem;
+import com.google.android.exoplayer2.ui.PlayerView;
+
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
-
-public class MainActivity extends AppCompatActivity {
-
-    private VideoView videoView;
+import java.util.ArrayList;
+import java.util.List;
+public class MainActivity extends AppCompatActivity implements VideoAdapter.OnVideoClickListener {
+    private PlayerView playerView;
+    private ExoPlayer player;
+    private RecyclerView recyclerView;
+    private VideoAdapter adapter;
+    private List<VideoItem> videoList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        videoView = findViewById(R.id.video_view);
+        playerView = findViewById(R.id.player_view);
+        recyclerView = findViewById(R.id.recyclerView);
+        Button btnRefresh = findViewById(R.id.btnRefresh);
 
-        new Thread(new Runnable() {
+        initializePlayer();
+        setupRecyclerView();
+        loadVideosFromGithub();
+
+        btnRefresh.setOnClickListener(v -> loadVideosFromGithub());
+    }
+
+    private void setupRecyclerView() {
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new VideoAdapter(videoList, this);
+        recyclerView.setAdapter(adapter);
+    }
+
+    private void initializePlayer() {
+        player = new ExoPlayer.Builder(this).build();
+        playerView.setPlayer(player);
+    }
+
+    private void loadVideosFromGithub() {
+        String githubUrl = "https://raw.githubusercontent.com/suaji/Android-IPTV-Msia/refs/heads/main/videos.json";
+
+        new AsyncTask<Void, Void, String>() {
             @Override
-            public void run() {
+            protected String doInBackground(Void... voids) {
                 try {
-                    URL url = new URL("https://raw.githubusercontent.com/username/repo/main/m3u8_link.json");
-                    InputStream is = url.openStream();
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
-                    String json = "";
+                    URL url = new URL(githubUrl);
+                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                    BufferedReader reader = new BufferedReader(
+                            new InputStreamReader(connection.getInputStream()));
+                    StringBuilder result = new StringBuilder();
                     String line;
                     while ((line = reader.readLine()) != null) {
-                        json += line;
+                        result.append(line);
                     }
-
-                    JSONObject jsonObject = new JSONObject(json);
-                    String m3u8Url = jsonObject.getString("m3u8_url");
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            MediaController mediaController = new MediaController(MainActivity.this);
-                            mediaController.setAnchorView(videoView);
-                            videoView.setMediaController(mediaController);
-                            videoView.setVideoURI(Uri.parse(m3u8Url));
-                            videoView.start();
-                        }
-                    });
-
-                } catch (IOException | JSONException e) {
+                    return result.toString();
+                } catch (Exception e) {
                     e.printStackTrace();
+                    return null;
                 }
             }
-        }).start();
+
+            @Override
+            protected void onPostExecute(String result) {
+                if (result != null) {
+                    try {
+                        JSONArray jsonArray = new JSONArray(result);
+                        List<VideoItem> newVideos = new ArrayList<>();
+
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            JSONObject video = jsonArray.getJSONObject(i);
+                            newVideos.add(new VideoItem(
+                                    video.getString("title"),
+                                    video.getString("url"),
+                                    video.getString("type"),
+                                    video.optString("thumbnail", "")
+                            ));
+                        }
+
+                        videoList = newVideos;
+                        adapter.updateVideos(videoList);
+
+                        if (!videoList.isEmpty()) {
+                            playVideo(videoList.get(0));
+                        }
+                    } catch (JSONException e) {
+                        Toast.makeText(MainActivity.this,
+                                "Ralat membaca data: " + e.getMessage(),
+                                Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(MainActivity.this,
+                            "Tidak dapat memuat turun data",
+                            Toast.LENGTH_LONG).show();
+                }
+            }
+        }.execute();
+    }
+
+    @Override
+    public void onVideoClick(VideoItem video) {
+        playVideo(video);
+    }
+
+    private void playVideo(VideoItem video) {
+        MediaItem mediaItem = MediaItem.fromUri(video.getUrl());
+        player.setMediaItem(mediaItem);
+        player.prepare();
+        player.play();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (player != null) {
+            player.release();
+            player = null;
+        }
     }
 }
