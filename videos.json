@@ -1,0 +1,26 @@
+[
+  {
+    "title": "TV1",
+    "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+    "type": "Video",
+    "thumbnail": "https://rtm-images.glueapi.io/320x0/live_channel/tv1_bckg.png"
+  },
+  {
+    "title": "TV2",
+    "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2",
+    "type": "Video",
+    "thumbnail": "https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TV2.jpg"
+  },
+  {
+    "title": "SURIA FM",
+    "url": "https://22253.live.streamtheworld.com/SURIA_FMAAC.aac?key=value&key2=value2&dist=triton-widget&tdsdk=js-2.9&swm=false&pname=tdwidgets&pversion=2.9&banners=300x250%2C728x90&burst-time=15&sbmid=278df643-abd7-4474-a713-b6e54ee4de75",
+    "type": "Audio",
+    "thumbnail": "https://storage.googleapis.com/smedia-tonton-com-my/2024/10/didik.jpg"
+  },
+  {
+    "title": "SURIA FM2",
+    "url": "https://22253.live.streamtheworld.com/SURIA_FMAAC.aac",
+    "type": "Audio",
+    "thumbnail": "https://storage.googleapis.com/smedia-tonton-com-my/2024/10/didik.jpg"
+  }
+]
