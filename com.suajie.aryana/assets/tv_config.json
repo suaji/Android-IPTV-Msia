@@ -1,0 +1,10 @@
+{
+    "tv1_url": "https://tonton-live-sg3.akamaized.net/live-hls/tonton1_720p/index.m3u8",
+    "tv2_url": "https://tonton-live-sg3.akamaized.net/live-hls/tonton2_720p/index.m3u8",
+    "tv3_url": "https://tonton-live-sg3.akamaized.net/live-hls/tonton3_720p/index.m3u8",
+    "tv4_url": "https://tonton-live-sg3.akamaized.net/live-hls/tonton4_720p/index.m3u8",
+    "tv5_url": "https://tonton-live-sg3.akamaized.net/live-hls/tonton5_720p/index.m3u8",
+    "tv6_url": "https://tonton-live-sg3.akamaized.net/live-hls/tonton6_720p/index.m3u8",
+    "tv7_url": "https://22243.live.streamtheworld.com/MUZIKFMAAC.aac",
+    "tv8_url": "https://22253.live.streamtheworld.com/SURIA_FMAAC.aac"
+}
