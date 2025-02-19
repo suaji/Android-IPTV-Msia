@@ -1,26 +1,22 @@
 [
   {
-    "title": "Video Stream 1",
-    "videoUrl": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-    "audioUrl": null,
-    "iconUrl": "https://rtm-images.glueapi.io/320x0/live_channel/tv1_bckg.png"
+    "title": "TV1",
+    "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+    "thumbnail": "https://rtm-images.glueapi.io/320x0/live_channel/tv1_bckg.png"
   },
   {
-    "title": "Audio Track 1",
-    "videoUrl": null,
-    "audioUrl": "https://your-audio-server.com/track1.aac",
-    "iconUrl": "https://your-image-server.com/icon2.png"
+    "title": "TV2",
+    "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2",
+    "thumbnail": "https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TV2.jpg"
   },
   {
-    "title": "Video Stream 2",
-    "videoUrl": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2",
-    "audioUrl": null,
-    "iconUrl": "https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TV2.jpg"
+    "title": "SURIA FM",
+    "url": "https://22253.live.streamtheworld.com/SURIA_FMAAC.aac",
+    "thumbnail": "https://your-thumbnail-url-3.jpg"
   },
   {
-    "title": "Audio Track 2",
-    "videoUrl": null,
-    "audioUrl": "https://your-audio-server.com/track2.aac",
-    "iconUrl": "https://your-image-server.com/icon4.png"
+    "title": "SURIA FM2",
+    "url": "https://22253.live.streamtheworld.com/SURIA_FMAAC.aac?key=value&key2=value2&dist=triton-widget&tdsdk=js-2.9&swm=false&pname=tdwidgets&pversion=2.9&banners=300x250%2C728x90&burst-time=15&sbmid=278df643-abd7-4474-a713-b6e54ee4de75"
+	"thumbnail": "https://your-thumbnail-url-3.jpg"
   }
 ]
