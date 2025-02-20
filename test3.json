@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "title": "Video 1",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3",
+      "thumbnail": "https://example.com/thumb1.jpg"
+    },
+    {
+      "title": "Video 2",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnail": "https://example.com/thumb2.jpg"
+    }
+  ]
+}
