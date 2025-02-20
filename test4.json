@@ -2,16 +2,16 @@
   {
     "Title": "TV1",
     "Url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-    "Thumbnail": "https://raw.githubusercontent.com/yourusername/yourrepo/main/thumbnail1.jpg"
+    "Thumbnail": "https://rtm-images.glueapi.io/320x0/live_channel/tv1_bckg.png"
   },
   {
     "Title": "TV2",
     "Url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2",
-    "Thumbnail": "https://raw.githubusercontent.com/yourusername/yourrepo/main/thumbnail2.jpg"
+    "Thumbnail": "https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TV2.jpg"
   },
   {
     "Title": "SURIA FM",
     "Url": "https://22253.live.streamtheworld.com/SURIA_FMAAC.aac",
-    "Thumbnail": "https://raw.githubusercontent.com/yourusername/yourrepo/main/thumbnail3.jpg"
+    "Thumbnail": "https://dengar.suria.my/wp-content/uploads/2024/04/suria-logo-orange.webp"
   }
 ]
