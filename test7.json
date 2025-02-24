@@ -1,0 +1,22 @@
+{
+    "tv_channels": [
+        {
+            "name": "Channel 1",
+            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1"
+        },
+        {
+            "name": "Channel 2", 
+            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1"
+        }
+    ],
+    "radio_channels": [
+        {
+            "name": "Radio 1",
+            "url": "https://example.com/radio1.aac"
+        },
+        {
+            "name": "Radio 2",
+            "url": "https://example.com/radio2.aac"
+        }
+    ]
+}
