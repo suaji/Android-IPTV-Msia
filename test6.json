@@ -1,30 +1,30 @@
 {
-    "tv": [
-        {
-            "name": "TV1",
-            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1"
-        },
-        {
-            "name": "TV2",
-            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2"
-        },
-        {
-            "name": "TV6",
-            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6"
-        }
-    ],
-    "radio": [
-        {
-            "name": "Radio 1",
-            "url": "https://example.com/radio1.mp3"
-        },
-        {
-            "name": "Radio 2",
-            "url": "https://example.com/radio2.mp3"
-        },
-        {
-            "name": "Radio 3",
-            "url": "https://example.com/radio3.mp3"
-        }
-    ]
+  "tv_channels": [
+    {
+      "title": "TV Channel 1",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnailUrl": "https://example.com/thumb1.jpg",
+      "type": "video"
+    },
+    {
+      "title": "TV Channel 2",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnailUrl": "https://example.com/thumb2.jpg",
+      "type": "video"
+    }
+  ],
+  "radio_stations": [
+    {
+      "title": "Radio 1",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnailUrl": "https://example.com/radio1.jpg",
+      "type": "audio"
+    },
+    {
+      "title": "Radio 2",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnailUrl": "https://example.com/radio2.jpg",
+      "type": "audio"
+    }
+  ]
 }
