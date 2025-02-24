@@ -1,22 +1,29 @@
 {
-    "tv_channels": [
-        {
-            "name": "Channel 1",
-            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1"
-        },
-        {
-            "name": "Channel 2", 
-            "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1"
-        }
-    ],
-    "radio_channels": [
-        {
-            "name": "Radio 1",
-            "url": "https://example.com/radio1.aac"
-        },
-        {
-            "name": "Radio 2",
-            "url": "https://example.com/radio2.aac"
-        }
-    ]
+  "videos": [
+    {
+      "title": "Video 1 - Pemandangan Indah",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnail": "https://example.com/video1.jpg"
+    },
+    {
+      "title": "Video 2 - Bandaraya Moden",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnail": "https://example.com/video2.jpg"
+    },
+    {
+      "title": "Video 3 - Makanan Sedap",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnail": "https://example.com/video3.jpg"
+    },
+    {
+      "title": "Video 4 - Haiwan Comel",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnail": "https://example.com/video4.jpg"
+    },
+    {
+      "title": "Video 5 - Sukan Ekstrem",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
+      "thumbnail": "https://example.com/video5.jpg"
+    }
+  ]
 }
