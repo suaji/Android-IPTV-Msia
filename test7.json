@@ -1,29 +1,12 @@
-{
-  "videos": [
+[
     {
-      "title": "Video 1 - Pemandangan Indah",
-      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-      "thumbnail": "https://example.com/video1.jpg"
+        "title": "Big Buck Bunny",
+        "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+        "thumbnail": "https://example.com/big_buck_bunny_thumbnail.jpg"
     },
     {
-      "title": "Video 2 - Bandaraya Moden",
-      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-      "thumbnail": "https://example.com/video2.jpg"
-    },
-    {
-      "title": "Video 3 - Makanan Sedap",
-      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-      "thumbnail": "https://example.com/video3.jpg"
-    },
-    {
-      "title": "Video 4 - Haiwan Comel",
-      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-      "thumbnail": "https://example.com/video4.jpg"
-    },
-    {
-      "title": "Video 5 - Sukan Ekstrem",
-      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1",
-      "thumbnail": "https://example.com/video5.jpg"
+        "title": "Sintel",
+        "url": "https://sample-videos.com/video123/mp4/720/sintel_720p_1mb.mp4", 
+        "thumbnail": "https://example.com/sintel_thumbnail.jpg"
     }
-  ]
-}
+]
