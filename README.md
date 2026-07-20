@@ -21,7 +21,7 @@ Nikmati saluran tempatan terus di hujung jari anda, tanpa bayaran tambahan.
 # Dari Planet Namek
 
 # AjieTV 1.0
-# <img src="https://raw.githubusercontent.com/suaji/Android-IPTV-Msia/refs/heads/main/Screenshot.png" width="600px" align="center" alt="AjieTV"/>
+# <img src="https://raw.githubusercontent.com/suaji/Android-IPTV-Msia/refs/heads/main/Screenshot/AjieTV1.0.png" width="600px" align="center" alt="AjieTV"/>
 
 # AjieTV 2.0
-# <img src="https://raw.githubusercontent.com/suaji/Android-IPTV-Msia/refs/heads/main/AjieTV2.0.png" width="600px" align="center" alt="AjieTV"/>
+# <img src="https://raw.githubusercontent.com/suaji/Android-IPTV-Msia/refs/heads/main/Screenshot/AjieTV2.0.png" width="600px" align="center" alt="AjieTV"/>
